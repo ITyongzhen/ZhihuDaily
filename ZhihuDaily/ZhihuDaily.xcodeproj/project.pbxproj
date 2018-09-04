@@ -15,6 +15,9 @@
 		21B8D51C213D2F68008AE6DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B8D51A213D2F68008AE6DB /* LaunchScreen.storyboard */; };
 		21B8D527213D2F68008AE6DB /* ZhihuDailyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B8D526213D2F68008AE6DB /* ZhihuDailyTests.swift */; };
 		21B8D532213D2F68008AE6DB /* ZhihuDailyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B8D531213D2F68008AE6DB /* ZhihuDailyUITests.swift */; };
+		21B8D5C7213D3B5C008AE6DB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B8D5C6213D3B5C008AE6DB /* MainViewController.swift */; };
+		21B8D5CB213D46F0008AE6DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B8D5CA213D46F0008AE6DB /* HomeViewController.swift */; };
+		21B8D5CD213D472B008AE6DB /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B8D5CC213D472B008AE6DB /* BannerView.swift */; };
 		5A7BF93DA2B30100C7A697B8 /* libPods-ZhihuDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA42DF8BA3CB85DAD7FE8324 /* libPods-ZhihuDaily.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,9 @@
 		21B8D52D213D2F68008AE6DB /* ZhihuDailyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhihuDailyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B8D531213D2F68008AE6DB /* ZhihuDailyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhihuDailyUITests.swift; sourceTree = "<group>"; };
 		21B8D533213D2F68008AE6DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B8D5C6213D3B5C008AE6DB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		21B8D5CA213D46F0008AE6DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		21B8D5CC213D472B008AE6DB /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		74194E93CFBC535ADF446E53 /* Pods-ZhihuDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhihuDaily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily.debug.xcconfig"; sourceTree = "<group>"; };
 		AA42DF8BA3CB85DAD7FE8324 /* libPods-ZhihuDaily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZhihuDaily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A2D0AED0681C42FD7516E4 /* Pods-ZhihuDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhihuDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +121,10 @@
 		21B8D50D213D2F66008AE6DB /* ZhihuDaily */ = {
 			isa = PBXGroup;
 			children = (
+				21B8D5C5213D3B35008AE6DB /* tools */,
+				21B8D5C4213D3B24008AE6DB /* view */,
+				21B8D5C3213D3B19008AE6DB /* model */,
+				21B8D5C2213D3AFF008AE6DB /* VC */,
 				21B8D50E213D2F66008AE6DB /* AppDelegate.swift */,
 				21B8D510213D2F66008AE6DB /* ViewController.swift */,
 				21B8D512213D2F66008AE6DB /* Main.storyboard */,
@@ -142,6 +152,37 @@
 				21B8D533213D2F68008AE6DB /* Info.plist */,
 			);
 			path = ZhihuDailyUITests;
+			sourceTree = "<group>";
+		};
+		21B8D5C2213D3AFF008AE6DB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				21B8D5C6213D3B5C008AE6DB /* MainViewController.swift */,
+				21B8D5CA213D46F0008AE6DB /* HomeViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		21B8D5C3213D3B19008AE6DB /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		21B8D5C4213D3B24008AE6DB /* view */ = {
+			isa = PBXGroup;
+			children = (
+				21B8D5CC213D472B008AE6DB /* BannerView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		21B8D5C5213D3B35008AE6DB /* tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tools;
 			sourceTree = "<group>";
 		};
 		77077022956B7BF77F63AE73 /* Frameworks */ = {
@@ -307,7 +348,10 @@
 			files = (
 				21B8D511213D2F66008AE6DB /* ViewController.swift in Sources */,
 				21B8D50F213D2F66008AE6DB /* AppDelegate.swift in Sources */,
+				21B8D5CD213D472B008AE6DB /* BannerView.swift in Sources */,
 				21B8D517213D2F66008AE6DB /* ZhihuDaily.xcdatamodeld in Sources */,
+				21B8D5C7213D3B5C008AE6DB /* MainViewController.swift in Sources */,
+				21B8D5CB213D46F0008AE6DB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
