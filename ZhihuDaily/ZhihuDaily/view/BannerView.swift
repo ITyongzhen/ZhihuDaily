@@ -10,5 +10,6 @@ import UIKit
 import Foundation
 class BannerView: UICollectionView{
     override func awakeFromNib() {
+        self.backgroundColor = UIColor.orange
     }
 }
